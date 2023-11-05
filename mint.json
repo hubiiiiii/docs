@@ -1,24 +1,20 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "51Fa",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#818cf8",
-    "light": "#818cf8",
-    "dark": "#818cf8",
-    "anchors": {
-      "from": "#fff",
-      "to": "#eee"
-    }
+    "primary": "#748DF0",
+    "light": "#ADBCF6",
+    "dark": "#4958A9"
   },
   "backgroundImage": "/images/docs-background.png",
   "modeToggle": {
     "default": "dark",
-    "isHidden": true
+    "isHidden": false
   },
   "feedback": {
     "suggestEdit": true,
@@ -28,24 +24,25 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:buzhi518@gmail.com"
     }
   ],
   "tabs": [
+
     {
-      "name": "Web Dev",
+      "name": "🤔 Web Dev 🤔",
       "url": "dev-frontend"
     },
     {
-      "name": "API Dev",
+      "name": "😴 API Dev 😴",
       "url": "dev-backend"
     },
     {
-      "name": "Ui Design",
+      "name": "😰 Ui Design 😰",
       "url": "dev-design"
     },
     {
-      "name": "Earn",
+      "name": "🥰 Earn Money 🥰",
       "url": "earn-science"
     }
  
@@ -68,26 +65,107 @@
     }
   ],
   "navigation": [
-    {
-      "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
-    },
-    {
-      "group": "Essentials",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
-    },
-    {
-      "group": "API Documentation",
-      "pages": ["api-reference/introduction"]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+    
+      {
+        "group": "😍 Get Started",
+        "pages": ["introduction", "quickstart", "development"]
+      },
+      {
+        "group": "😍 Essentials",
+        "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
+      },
+      {
+        "group": "😍 Ui Design🚦工具集",
+        "pages": ["dev-design/introduction"]
+      },
+      {
+        "group": "😍 Ui Design🚦案例欣赏",
+        "pages": ["dev-design/introduction"]
+      },
+      {
+        "group": "😍 Web Dev🚦Vue",
+        "pages": ["dev-frontend/Vue/introduction"]
+      },
+      {
+        "group": "😍 Web Dev🚦React",
+        "pages": ["dev-frontend/React/introduction"]
+      }
+      ,
+      {
+        "group": "😍 Web Dev🚦TypeScript",
+        "pages": ["dev-frontend/TypeScript/introduction"]
+      },
+      {
+        "group": "😍 Web Dev🚦JavaScript",
+        "pages": ["dev-frontend/JavaScript/introduction"]
+      }
+      ,
+      {
+        "group": "😍 Web Dev🚦CSS",
+        "pages": ["dev-frontend/CSS/introduction"]
+      },
+      {
+        "group": "😍 Web Dev🚦Animotions",
+        "pages": ["dev-frontend/Animotions/introduction"]
+      }
+      ,
+      {
+        "group": "😍 API Dev🚦Rust",
+        "pages": ["dev-backend/Rust/introduction",
+        {
+          "group": "😰 学习",
+          "pages": ["dev-backend/Rust/basic/introduction"]
+        },
+        {
+          "group": "🥳 练手",
+          "pages": ["dev-backend/Rust/practice/introduction"]
+        }
       ]
-    }
+      },
+      {
+        "group": "😍 API Dev🚦Python",
+        "pages": ["dev-backend/Python/introduction",
+        {
+          "group": "😰 学习",
+          "pages": ["dev-backend/Python/basic/introduction"]
+        },
+        {
+          "group": "🥳 练手",
+          "pages": ["dev-backend/Python/practice/introduction"]
+        }
+      
+      
+      ]
+      },
+      {
+        "group": "😍 Earn Money🚦JS逆向",
+        "pages": ["earn-science/introduction",
+        {
+          "group": "😰 学习",
+          "pages": ["earn-science/js/basic/introduction"]
+        },
+        {
+          "group": "🥳 练手",
+          "pages": ["earn-science/js/practice/introduction"]
+        }
+      
+      
+      ]
+      },
+      {
+        "group": "😍 Earn Money🚦安卓逆向",
+        "pages": ["earn-science/introduction",
+        {
+          "group": "😰 学习",
+          "pages": ["earn-science/android/basic/introduction"]
+        },
+        {
+          "group": "🥳 练手",
+          "pages": ["earn-science/android/practice/introduction"]
+        }
+      ]
+      }
+    
   ],
   "footerSocials": {
     "twitter": "https://twitter.com/mintlify",
