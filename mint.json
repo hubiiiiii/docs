@@ -114,7 +114,7 @@
         "pages": ["dev-backend/Rust/introduction",
         {
           "group": "😰 学习",
-          "pages": ["dev-backend/Rust/basic/introduction"]
+          "pages": ["dev-backend/Rust/basic/introduction","dev-backend/Rust/basic/rust00001"]
         },
         {
           "group": "🥳 练手",
