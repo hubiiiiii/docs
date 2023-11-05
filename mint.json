@@ -7,9 +7,13 @@
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#748DF0",
-    "light": "#ADBCF6",
-    "dark": "#4958A9"
+    "primary": "#7E53F8",
+    "light": "#BFA8FF",
+    "dark": "#4C22C0",
+    
+    "background": {
+      "dark": "#121212"
+    }
   },
   "backgroundImage": "/images/docs-background.png",
   "modeToggle": {
@@ -21,6 +25,13 @@
     "raiseIssue": true,
     "thumbsRating": true
   },
+  "search": {
+    "prompt": "✨ Make magic..."
+  },
+  "primaryTab": {
+    "name": "Docs"
+  },
+
   "topbarLinks": [
     {
       "name": "Support",
