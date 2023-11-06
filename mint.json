@@ -29,7 +29,7 @@
     "prompt": "✨ Make magic..."
   },
   "primaryTab": {
-    "name": "Docs"
+    "name": "💕 Docs 💕"
   },
 
   "topbarLinks": [
@@ -55,6 +55,10 @@
     {
       "name": "🥰 Earn Money 🥰",
       "url": "earn-science"
+    },
+    {
+      "name": "🫥 Code Project 🫥",
+      "url": "code"
     }
  
   ],
@@ -175,7 +179,25 @@
           "pages": ["earn-science/android/practice/introduction"]
         }
       ]
+      },
+      {
+        "group": "😍 Code Project🚦项目列表",
+        "pages": ["code/introduction"
+      ]
+      },
+      {
+        "group": "😰 Clog 个人博客",
+        "pages": ["code/clog/introduction"]
+      },
+      {
+        "group": "🤔 Crypto Easy 逆向工具",
+        "pages": ["code/crypto/introduction"]
+      },
+      {
+        "group": "🤔 51Fa 搞钱",
+        "pages": ["code/51fa/introduction"]
       }
+
     
   ],
   "footerSocials": {
