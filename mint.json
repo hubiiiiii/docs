@@ -83,7 +83,7 @@
     
       {
         "group": "😍 Get Started",
-        "pages": ["introduction", "quickstart", "development"]
+        "pages": ["DevTools", "MDX", "development"]
       },
       {
         "group": "😍 Essentials",
