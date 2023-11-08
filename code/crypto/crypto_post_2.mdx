@@ -6,10 +6,10 @@ description: "记录项目编写中遇到的问题以及解决方法"
 <AccordionGroup>
   <Accordion icon="github" title="侧边栏由于菜单条目过多，会固定出现滚动条，怎么实现鼠标移入时显示滚动条？">
   <Tip>灵感来源PC版QQ音乐</Tip>
-   ![图1](code/crypto/images/2023-11-09-01-02-08.png)
+   ![图1](https://raw.githubusercontent.com/hubiiiiii/docs/main/code/crypto/images/2023-11-09-01-02-08.png)
   思路就是设置侧边栏样式为`overflow:hidden`，当鼠标移入时（也就是`hover`）`overflow:auto`
   查看元素可以看见样式是由`.arco-layout-sider-children`这个类决定的
-   ![图2](code/crypto/images/2023-11-09-04-25-14.png)
+   ![图2](https://raw.githubusercontent.com/hubiiiiii/docs/main/code/crypto/images/2023-11-09-04-25-14.png)
   修改CSS样式即可
   ```css
     /* 在鼠标移入时显示滚动条 */
