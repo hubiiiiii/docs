@@ -1,0 +1,59 @@
+---
+title: No.1 🤔 项目构建
+description: '项目的基础环境，以及在前端直接调用Rust的函数，避免网络请求'
+---
+
+## 使用技术栈
+<CardGroup cols={3}>
+
+  <Card
+    title="Vue.js"
+    href="https://vuejs.org/"
+   
+>
+一款用于构建用户界面的 JavaScript 框架
+
+</Card>
+
+<Card
+  title="Rust"
+  href="https://www.rust-lang.org/zh-CN"
+
+>
+构建可靠且高效软件能力
+</Card>
+
+<Card
+  title="UnoCSS"
+  href="https://alfred-skyblue.github.io/unocss-docs-cn/"
+  
+>
+即时按需的原子级CSS引擎
+</Card>
+
+<Card
+  title="Tauri"
+  href="https://beta.tauri.app/"
+  
+>
+为 Web 应用提供坚实的基础
+</Card>
+
+
+
+</CardGroup>
+
+## 从前端调用Rust
+`Tauri`提供了一个简单而强大的 `command` 系统，用于`从 web 应用程序调用 Rust 函数`。 命令可以`接受参数并返回值`。 它们也可以返回错误并且是 `async`。
+
+官方文档：https://tauri.app/v1/guides/features/command
+
+## Tauri基础命令
+启动
+```shell
+npm run tauri dev
+```
+编译
+```shell
+npm run tauri build
+```
