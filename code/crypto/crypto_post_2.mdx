@@ -1,0 +1,56 @@
+---
+title: No.2 🤔 项目问题总结
+description: "记录项目编写中遇到的问题以及解决方法"
+---
+
+<AccordionGroup>
+  <Accordion icon="github" title="侧边栏由于菜单条目过多，会固定出现滚动条，怎么实现鼠标移入时显示滚动条？">
+  <Tip>灵感来源PC版QQ音乐</Tip>
+   ![图1](code/crypto/images/2023-11-09-01-02-08.png)
+  思路就是设置侧边栏样式为`overflow:hidden`，当鼠标移入时（也就是`hover`）`overflow:auto`
+  查看元素可以看见样式是由`.arco-layout-sider-children`这个类决定的
+   ![图2](code/crypto/images/2023-11-09-04-25-14.png)
+  修改CSS样式即可
+  ```css
+    /* 在鼠标移入时显示滚动条 */
+    .layout-sider :deep(.arco-layout-sider-children){
+      overflow: hidden;
+    }
+
+    .layout-sider :deep(.arco-layout-sider-children):hover {
+      overflow-y: auto;
+    }
+  ```
+  </Accordion>
+  <Accordion icon="rectangle-terminal" title="arco菜单条目a-menu-item设置路由">
+    <Tip>找了很久发现`Arco Design`并不像`element-ui`一样，可以直接通过菜单跳转，<b>Arco还得写逻辑代码</b></Tip>
+    - 给菜单item绑定key
+    ```html
+      <a-menu-item key="/" class="flex gap-2 items-center" >
+          首页
+      </a-menu-item>
+    ```
+    - 给主菜单item绑定点击事件
+  <Tip> 来自官方文档 [Menu Api](https://arco.design/vue/component/menu#API) </Tip>
+  
+ 
+
+    ```js
+      <a-menu
+        :defaultOpenKeys="['1']"
+        :defaultSelectedKeys="['/home']"
+        :style="{ width: '100%' }"
+        @menu-item-click="onClickMenuItem"
+      > 
+    ```
+    - 路由跳转逻辑代码
+    ```js
+      import router from '/src/router/index.js';
+
+      const onClickMenuItem = (key)=>{
+        // 跳转路由
+        router.push(key)
+      }
+    ```
+  </Accordion>
+</AccordionGroup>
