@@ -98,9 +98,14 @@
         "pages": ["dev-design/introduction"]
       },
       {
+        "group": "😍 Web Dev🚦WEB前端大师课",
+        "pages": ["dev-frontend/class-master/introduction","dev-frontend/class-master/class01"]
+      },
+      {
         "group": "😍 Web Dev🚦Vue",
         "pages": ["dev-frontend/Vue/introduction"]
       },
+      
       {
         "group": "😍 Web Dev🚦React",
         "pages": ["dev-frontend/React/introduction"]
