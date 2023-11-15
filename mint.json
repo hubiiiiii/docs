@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "51Fa",
+  "name": "Web Dev",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -9,13 +9,11 @@
   "colors": {
     "primary": "#7E53F8",
     "light": "#BFA8FF",
-    "dark": "#BFA8FF",
+    "dark": "#BFA8FF"
     
-    "background": {
-      "dark": "#BFA8FF"
-    }
+    
   },
-  "backgroundImage": "/images/docs-background.png",
+
   "modeToggle": {
     "default": "dark",
     "isHidden": false
