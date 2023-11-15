@@ -98,6 +98,10 @@
         "pages": ["dev-design/introduction"]
       },
       {
+        "group": "😍 Web Dev",
+        "pages": ["dev-frontend/web0001"]
+      },
+      {
         "group": "😍 Web Dev🚦WEB前端大师课",
         "pages": ["dev-frontend/class-master/introduction","dev-frontend/class-master/class01"]
       },
@@ -117,7 +121,7 @@
       },
       {
         "group": "😍 Web Dev🚦JavaScript",
-        "pages": ["dev-frontend/JavaScript/introduction"]
+        "pages": ["dev-frontend/JavaScript/js0001"]
       }
       ,
       {
