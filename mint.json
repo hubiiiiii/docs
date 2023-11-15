@@ -19,15 +19,15 @@
     "isHidden": false
   },
   "feedback": {
-    "suggestEdit": true,
-    "raiseIssue": true,
-    "thumbsRating": true
+    "suggestEdit": false,
+    "raiseIssue": false,
+    "thumbsRating": false
   },
   "search": {
     "prompt": "✨ Make magic..."
   },
   "primaryTab": {
-    "name": "💕 Docs 💕"
+    "name": "💕 Docs"
   },
 
   "topbarLinks": [
@@ -39,100 +39,77 @@
   "tabs": [
 
     {
-      "name": "🤔 Web Dev 🤔",
+      "name": "🤔 前端",
       "url": "dev-frontend"
     },
     {
-      "name": "😴 API Dev 😴",
+      "name": "😴 后端",
       "url": "dev-backend"
     },
     {
-      "name": "😰 Ui Design 😰",
+      "name": "😰 Ui设计",
       "url": "dev-design"
     },
     {
-      "name": "🥰 Earn Money 🥰",
+      "name": "🫡 科学家",
       "url": "earn-science"
     },
     {
-      "name": "🫥 Code Project 🫥",
+      "name": "🥳 项目",
       "url": "code"
     }
  
   ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://dev.51fa.app/"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://dev.51fa.app/"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://51fa.app/"
-    }
-  ],
+  
   "navigation": [
     
       {
-        "group": "😍 Get Started",
+        "group": "开始",
         "pages": ["DevTools", "MDX", "development"]
       },
+
       {
-        "group": "😍 Essentials",
-        "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
-      },
-      {
-        "group": "😍 Ui Design🚦工具集",
+        "group": "工具集",
         "pages": ["dev-design/introduction"]
       },
       {
-        "group": "😍 Ui Design🚦案例欣赏",
+        "group": "案例欣赏",
         "pages": ["dev-design/introduction"]
       },
       {
-        "group": "😍 Web Dev",
-        "pages": ["dev-frontend/web0001"]
+        "group": "前端",
+        "pages": ["dev-frontend/introduction"]
       },
       {
-        "group": "😍 Web Dev🚦WEB前端大师课",
+        "group": "WEB前端大师课",
         "pages": ["dev-frontend/class-master/introduction","dev-frontend/class-master/class01"]
       },
       {
-        "group": "😍 Web Dev🚦Vue",
+        "group": "Vue",
         "pages": ["dev-frontend/Vue/introduction"]
       },
       
       {
-        "group": "😍 Web Dev🚦React",
+        "group": "React",
         "pages": ["dev-frontend/React/introduction"]
       }
       ,
       {
-        "group": "😍 Web Dev🚦TypeScript",
+        "group": "TypeScript",
         "pages": ["dev-frontend/TypeScript/introduction"]
       },
       {
-        "group": "😍 Web Dev🚦JavaScript",
-        "pages": ["dev-frontend/JavaScript/js0001"]
+        "group": "JavaScript",
+        "pages": ["dev-frontend/JavaScript/js0001","dev-frontend/JavaScript/js0002"]
       }
       ,
       {
-        "group": "😍 Web Dev🚦CSS",
+        "group": "CSS",
         "pages": ["dev-frontend/CSS/introduction"]
       },
+
       {
-        "group": "😍 Web Dev🚦Animotions",
-        "pages": ["dev-frontend/Animotions/introduction"]
-      }
-      ,
-      {
-        "group": "😍 API Dev🚦Rust",
+        "group": "Rust",
         "pages": ["dev-backend/Rust/introduction",
         {
           "group": "😰 学习",
@@ -145,7 +122,7 @@
       ]
       },
       {
-        "group": "😍 API Dev🚦Python",
+        "group": "Python",
         "pages": ["dev-backend/Python/introduction",
         {
           "group": "😰 学习",
@@ -159,8 +136,9 @@
       
       ]
       },
+      
       {
-        "group": "😍 Earn Money🚦JS逆向",
+        "group": "JS逆向",
         "pages": ["earn-science/introduction",
         {
           "group": "😰 学习",
@@ -175,7 +153,7 @@
       ]
       },
       {
-        "group": "😍 Earn Money🚦安卓逆向",
+        "group": "安卓逆向",
         "pages": ["earn-science/introduction",
         {
           "group": "😰 学习",
