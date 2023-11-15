@@ -16,7 +16,7 @@
 
   "modeToggle": {
     "default": "light",
-    "isHidden": false
+    "isHidden": true
   },
   "feedback": {
     "suggestEdit": false,
@@ -166,28 +166,24 @@
       ]
       },
       {
-        "group": "😍 Code Project🚦项目列表",
+        "group": "项目列表",
         "pages": ["code/introduction"
       ]
       },
       {
-        "group": "😰 Clog 个人博客",
+        "group": "Clog",
         "pages": ["code/clog/introduction"]
       },
       {
-        "group": "🤔 Crypto Easy 逆向工具",
+        "group": "Crypto Easy",
         "pages": ["code/crypto/introduction","code/crypto/crypto_post_1","code/crypto/crypto_post_2"]
       },
       {
-        "group": "🤔 51Fa 搞钱",
+        "group": "51fa",
         "pages": ["code/51fa/introduction"]
       }
 
     
-  ],
-  "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
-  }
+  ]
+  
 }
