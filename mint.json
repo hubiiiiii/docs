@@ -9,10 +9,10 @@
   "colors": {
     "primary": "#7E53F8",
     "light": "#BFA8FF",
-    "dark": "#4C22C0",
+    "dark": "#BFA8FF",
     
     "background": {
-      "dark": "#121212"
+      "dark": "#BFA8FF"
     }
   },
   "backgroundImage": "/images/docs-background.png",
