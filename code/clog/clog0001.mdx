@@ -1,0 +1,70 @@
+---
+title: 项目Build报错总结
+description: '项目在打包时遇到了很多的问题，咱们一一解决'
+---
+
+## 1.依赖包
+首先，主要就会依赖包问题，需要下载`Wix`和`NSIS`两个工具
+但是由于github问题，下载会超时报错，所以我们需要手动下载并拖到配置文件
+```shell
+C:\Users\Administrator\AppData\Local\tauri
+```
+参考资料：[Tauri从入门到出门](https://zhuanlan.zhihu.com/p/642643576)
+### Wix
+首先[点击下载wix](https://github.com/wixtoolset/wix3/releases/download/wix3112rtm/wix311-binaries.zip)，下载完成后，解压到上面的目录下，并重命名为`WixTools`
+### NSIS
+这个比较复杂，要下载三个文件，只下载提供的nsis 会出错
+![](https://s2.loli.net/2023/11/25/7UCroKwXGA39HBe.webp)
+需要下载三个包：
+
+- [NSIS](https://github.com/tauri-apps/binary-releases/releases/download/nsis-3/nsis-3.zip)
+- [NSIS-ApplicationID](https://github.com/tauri-apps/binary-releases/releases/download/nsis-plugins-v0/NSIS-ApplicationID.zip)
+- [NSIS-Tauri-Utils](https%3A//github.com/tauri-apps/nsis-tauri-utils/releases/download/nsis_tauri_utils-v0.1.1/nsis_tauri_utils.dll)
+
+    - 首先将下载的`NSIS`解压到上面文件夹，并重命名为NSIS
+    - 然后将下载的`NSIS-ApplicationID`解压到`NSIS\Plugins`
+    - 把`NSIS\Plugins\ReleaseUnicode\ApplicationID.dll`复制到`NSIS\Plugins\x86-unicode\ApplicationID.dll`
+    - 把`NSIS_TAURI_UTILS`下载的`nsis_tauri_utils.dll`复制到`NSIS\Plugins\x86-unicode\nsis_tauri_utils.dll`
+
+这样就完美解决了
+![](https://s2.loli.net/2023/11/25/cQPnh4jN9w72yoB.webp)
+
+## 2.问题一 打包时报错
+<Note>Running light to produce D:\dddesk\前端进阶\clog\src-tauri\target\release\bundle\msi\知我_1.0.0_x64_en-US.msi
+       Error failed to bundle project: error running light.exe</Note>
+
+参考资料:
+- [跨平台开发之 Tauri](https://zhuanlan.zhihu.com/p/623152313)
+- [Error failed to bundle project: error running light.exe报错解决方法](https://blog.csdn.net/qq_41614928/article/details/128145938)
+
+解决：设置`tauri.conf.json` - `budle `节点下的 `windows` 的 `wix` 语言为 `zh-CN`
+```javascript
+"bundle": {
+  "windows": {
+    "wix": {
+      "language": "zh-CN"
+    }
+  }
+},
+```
+
+## 3.问题二 应用启动白屏
+<Note>确实是能打包了，但是打包后白屏，苦求无果</Note>
+
+![](https://s2.loli.net/2023/11/25/t4ck97VE1auvi5H.webp)
+- 发现`右键-另存为`，可以导出`HTML`
+![](https://s2.loli.net/2023/11/25/ESA4UuhzKr9aqNQ.webp)
+- 最后打开`HTML` 再打开`开发者工具`可以查看报错
+发现是找不到js，css资源，我百思不得其解，怎么会找不到呢
+![](https://s2.loli.net/2023/11/25/HvPZarEfURF1Ycs.webp)
+然后我突然想到我开了gzip压缩，把js，css都压缩为.gz
+![](https://s2.loli.net/2023/11/25/GBWLECqTNKes5ir.webp)
+取消gzip压缩就可以了
+    - 在`vite.config.js`的`plugins`里删除对应代码即可
+![](https://s2.loli.net/2023/11/25/lTNHLURycs9u8YC.webp)
+
+## 4.问题三 应用启动后图片未加载成功
+<Note>正常打包后。发现图片这些资源没有加载成功</Note>    
+![](https://s2.loli.net/2023/11/25/enDpGLKPogkvcFs.webp)
+## 结果
+
